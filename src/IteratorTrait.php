@@ -94,4 +94,3 @@ trait IteratorTrait
      */
     abstract protected function & getIterableElement();
 }
-

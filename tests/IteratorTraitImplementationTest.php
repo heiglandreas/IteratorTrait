@@ -28,7 +28,6 @@ namespace Org_Heigl\IteratorTraitTest;
 
 class IteratorTraitImplementationTest extends \PHPUnit_Framework_TestCase
 {
-
     public function testThatIteratorIteratesOverArray()
     {
         $array = [
@@ -77,5 +76,4 @@ class IteratorTraitImplementationTest extends \PHPUnit_Framework_TestCase
         $iterator->next();
         $this->assertFalse($iterator->valid());
     }
-
 }
