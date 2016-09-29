@@ -37,7 +37,7 @@ trait IteratorTrait
      */
     public function current()
     {
-        return current($this->getIteratorArray());
+        return current($this->getIterableElement());
     }
 
     /**
@@ -48,7 +48,7 @@ trait IteratorTrait
      */
     public function next()
     {
-        next($this->getIteratorArray());
+        next($this->getIterableElement());
     }
 
     /**
@@ -59,7 +59,7 @@ trait IteratorTrait
      */
     public function key()
     {
-        return key($this->getIteratorArray());
+        return key($this->getIterableElement());
     }
 
     /**
@@ -84,13 +84,14 @@ trait IteratorTrait
      */
     public function rewind()
     {
-        reset($this->getIteratorArray());
+        reset($this->getIterableElement());
     }
 
     /**
      * Get the array the iterator shall iterate over.
      *
-     * @return array
+     * @return array|Traversable
      */
     abstract protected function & getIterableElement();
 }
+

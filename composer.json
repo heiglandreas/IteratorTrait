@@ -14,5 +14,13 @@
         "psr-4": {
             "Org_Heigl\\IteratorTrait\\" : "src/"
         }
+    },
+    "autoload-dev" : {
+        "psr-4": {
+            "Org_Heigl\\IteratorTraitTest\\" : "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.5"
     }
 }

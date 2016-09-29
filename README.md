@@ -28,7 +28,7 @@ class MyList implements \Iterator
 }
 ```
 
-The rest of the Iterator implementation is andled within the IteratorTrait.
+The rest of the Iterator implementation is handled within the IteratorTrait.
 
 ## Issues
 
