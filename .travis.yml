@@ -13,7 +13,6 @@ matrix:
   - php: nightly
 
 before_install:
-  - phpenv config-rm xdebug.ini
   - composer self-update
   - if [[ $EXECUTE_CS_CHECK == 'true' ]]; then composer require --dev --no-update friendsofphp/php-cs-fixer ; fi
 install:
