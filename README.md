@@ -19,6 +19,7 @@ class MyList implements \Iterator
 {
     use IteratorTrait;
 
+    /** Can be an array or an Object implementing traversable */
     protected $yourArrayToIterateOver = [];
 
     public function & getIterableElement()
